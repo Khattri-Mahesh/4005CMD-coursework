@@ -1,0 +1,50 @@
+{
+    "london": {
+        "temperature": "10.05",
+        "humidity": "83.22",
+        "co2": "465",
+        "airquality": "Moderate"
+    },
+    "newyork": {
+        "temperature": "-2.33",
+        "humidity": "40.72",
+        "co2": "328",
+        "airquality": "Moderate"
+    },
+    "tokyo": {
+        "temperature": "-4.01",
+        "humidity": "38.68",
+        "co2": "461",
+        "airquality": "Poor"
+    },
+    "coventry": {
+        "temperature": "0.98",
+        "humidity": "89.33",
+        "co2": "399",
+        "airquality": "Poor"
+    },
+    "cardiff": {
+        "temperature": "29.58",
+        "humidity": "59.67",
+        "co2": "385",
+        "airquality": "Moderate"
+    },
+    "edinburgh": {
+        "temperature": "5.25",
+        "humidity": "57.94",
+        "co2": "312",
+        "airquality": "Moderate"
+    },
+    "dublin": {
+        "temperature": "11.85",
+        "humidity": "87.39",
+        "co2": "493",
+        "airquality": "Poor"
+    },
+    "birmingham": {
+        "temperature": "27.26",
+        "humidity": "32.41",
+        "co2": "313",
+        "airquality": "Good"
+    }
+}

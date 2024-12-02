@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_723cbad210b89fdbfe6aab1818b81af3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_723cbad210b89fdbfe6aab1818b81af3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_723cbad210b89fdbfe6aab1818b81af3 = L.map(
+                "map_723cbad210b89fdbfe6aab1818b81af3",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00a92b0ff934ed1c6ba185dddd44adc3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_00a92b0ff934ed1c6ba185dddd44adc3.addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var marker_4b98ec965a011aeb7eaecc7b1bf3fa71 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_ef4ae50b06ce7e49d490dc71699d1b57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b98ec965a011aeb7eaecc7b1bf3fa71.setIcon(icon_ef4ae50b06ce7e49d490dc71699d1b57);
+        
+    
+        var popup_134948ce5865b7103ede2a6dbefc2603 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac744fa2126854614c1716977ee45cee = $(`<div id="html_ac744fa2126854614c1716977ee45cee" style="width: 100.0%; height: 100.0%;">                                            <b>London</b><br>             Temperature: 10.05 °C<br>             Humidity: 83.22 %<br>             CO2 Levels: 465 ppm<br>             Air Quality: Moderate<br>             </div>`)[0];
+                popup_134948ce5865b7103ede2a6dbefc2603.setContent(html_ac744fa2126854614c1716977ee45cee);
+            
+        
+
+        marker_4b98ec965a011aeb7eaecc7b1bf3fa71.bindPopup(popup_134948ce5865b7103ede2a6dbefc2603)
+        ;
+
+        
+    
+    
+            var marker_7f6f7c4a99b5bd699af03e0929105afd = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_6716ad917ef61ad542b98d49b54734d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f6f7c4a99b5bd699af03e0929105afd.setIcon(icon_6716ad917ef61ad542b98d49b54734d3);
+        
+    
+        var popup_99a8844cb2d8057ab80cb24549f84ee4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_078de20c53d19cf8329df68ef0715051 = $(`<div id="html_078de20c53d19cf8329df68ef0715051" style="width: 100.0%; height: 100.0%;">                                            <b>Newyork</b><br>             Temperature: -2.33 °C<br>             Humidity: 40.72 %<br>             CO2 Levels: 328 ppm<br>             Air Quality: Moderate<br>             </div>`)[0];
+                popup_99a8844cb2d8057ab80cb24549f84ee4.setContent(html_078de20c53d19cf8329df68ef0715051);
+            
+        
+
+        marker_7f6f7c4a99b5bd699af03e0929105afd.bindPopup(popup_99a8844cb2d8057ab80cb24549f84ee4)
+        ;
+
+        
+    
+    
+            var marker_d28f2ba8b9c03f4980cecf2e396ce387 = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_2f31d5ca481dc894c5f6a856a28fca25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d28f2ba8b9c03f4980cecf2e396ce387.setIcon(icon_2f31d5ca481dc894c5f6a856a28fca25);
+        
+    
+        var popup_a7e9fa66eaf225865675f9de155dd99c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3dd757b4a9475c028dc5aeceb9875a1 = $(`<div id="html_a3dd757b4a9475c028dc5aeceb9875a1" style="width: 100.0%; height: 100.0%;">                                            <b>Tokyo</b><br>             Temperature: -4.01 °C<br>             Humidity: 38.68 %<br>             CO2 Levels: 461 ppm<br>             Air Quality: Poor<br>             </div>`)[0];
+                popup_a7e9fa66eaf225865675f9de155dd99c.setContent(html_a3dd757b4a9475c028dc5aeceb9875a1);
+            
+        
+
+        marker_d28f2ba8b9c03f4980cecf2e396ce387.bindPopup(popup_a7e9fa66eaf225865675f9de155dd99c)
+        ;
+
+        
+    
+    
+            var marker_5a462b122019916ac647152639470fb8 = L.marker(
+                [52.4068, -1.5197],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_fa6de2952301a947f99804e66f171d04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a462b122019916ac647152639470fb8.setIcon(icon_fa6de2952301a947f99804e66f171d04);
+        
+    
+        var popup_0fba1e796a51fdf297bdf627f42e4ced = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76a44986fac961907aac07aa174d4242 = $(`<div id="html_76a44986fac961907aac07aa174d4242" style="width: 100.0%; height: 100.0%;">                                            <b>Coventry</b><br>             Temperature: 0.98 °C<br>             Humidity: 89.33 %<br>             CO2 Levels: 399 ppm<br>             Air Quality: Poor<br>             </div>`)[0];
+                popup_0fba1e796a51fdf297bdf627f42e4ced.setContent(html_76a44986fac961907aac07aa174d4242);
+            
+        
+
+        marker_5a462b122019916ac647152639470fb8.bindPopup(popup_0fba1e796a51fdf297bdf627f42e4ced)
+        ;
+
+        
+    
+    
+            var marker_0c8770c413029e48dcf4f7b527d194cf = L.marker(
+                [51.4816, -3.1791],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_e380cf91a3ca6699aae53a6e4a8445fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c8770c413029e48dcf4f7b527d194cf.setIcon(icon_e380cf91a3ca6699aae53a6e4a8445fc);
+        
+    
+        var popup_32a621a4e197fadaad73ffc6cc191d98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_936b0432d2be931ea7ab0980a85ada38 = $(`<div id="html_936b0432d2be931ea7ab0980a85ada38" style="width: 100.0%; height: 100.0%;">                                            <b>Cardiff</b><br>             Temperature: 29.58 °C<br>             Humidity: 59.67 %<br>             CO2 Levels: 385 ppm<br>             Air Quality: Moderate<br>             </div>`)[0];
+                popup_32a621a4e197fadaad73ffc6cc191d98.setContent(html_936b0432d2be931ea7ab0980a85ada38);
+            
+        
+
+        marker_0c8770c413029e48dcf4f7b527d194cf.bindPopup(popup_32a621a4e197fadaad73ffc6cc191d98)
+        ;
+
+        
+    
+    
+            var marker_b3d1ddf5e92334e1f7edf2b973f23870 = L.marker(
+                [55.9533, -3.1883],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_8ebf6c99c8bcaf79690ed6fbcd62aba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3d1ddf5e92334e1f7edf2b973f23870.setIcon(icon_8ebf6c99c8bcaf79690ed6fbcd62aba2);
+        
+    
+        var popup_0bf8cb6089472c1d472cf8d8ba6ef928 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77c363b607ba3ed91241cb59e450d961 = $(`<div id="html_77c363b607ba3ed91241cb59e450d961" style="width: 100.0%; height: 100.0%;">                                            <b>Edinburgh</b><br>             Temperature: 5.25 °C<br>             Humidity: 57.94 %<br>             CO2 Levels: 312 ppm<br>             Air Quality: Moderate<br>             </div>`)[0];
+                popup_0bf8cb6089472c1d472cf8d8ba6ef928.setContent(html_77c363b607ba3ed91241cb59e450d961);
+            
+        
+
+        marker_b3d1ddf5e92334e1f7edf2b973f23870.bindPopup(popup_0bf8cb6089472c1d472cf8d8ba6ef928)
+        ;
+
+        
+    
+    
+            var marker_15c83ebd1e51811f2bc0063a1c3cfbee = L.marker(
+                [53.3498, -6.2603],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_fcc7e70be94120e2a89bb96c576280b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15c83ebd1e51811f2bc0063a1c3cfbee.setIcon(icon_fcc7e70be94120e2a89bb96c576280b9);
+        
+    
+        var popup_30bb52102ab0a77d06db5ca47ef5fb72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_737ec7bf3f8ec22371221778fd464d9a = $(`<div id="html_737ec7bf3f8ec22371221778fd464d9a" style="width: 100.0%; height: 100.0%;">                                            <b>Dublin</b><br>             Temperature: 11.85 °C<br>             Humidity: 87.39 %<br>             CO2 Levels: 493 ppm<br>             Air Quality: Poor<br>             </div>`)[0];
+                popup_30bb52102ab0a77d06db5ca47ef5fb72.setContent(html_737ec7bf3f8ec22371221778fd464d9a);
+            
+        
+
+        marker_15c83ebd1e51811f2bc0063a1c3cfbee.bindPopup(popup_30bb52102ab0a77d06db5ca47ef5fb72)
+        ;
+
+        
+    
+    
+            var marker_8a980b0f42afbb71573fed0421db43e3 = L.marker(
+                [52.4862, -1.8904],
+                {}
+            ).addTo(map_723cbad210b89fdbfe6aab1818b81af3);
+        
+    
+            var icon_b842a41f57453db9bbea74d88873e1fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a980b0f42afbb71573fed0421db43e3.setIcon(icon_b842a41f57453db9bbea74d88873e1fb);
+        
+    
+        var popup_c85c51bf5bb9b8d02f18521f098f7f5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1e67493d1b18f29810f19c6e084ec70 = $(`<div id="html_d1e67493d1b18f29810f19c6e084ec70" style="width: 100.0%; height: 100.0%;">                                            <b>Birmingham</b><br>             Temperature: 27.26 °C<br>             Humidity: 32.41 %<br>             CO2 Levels: 313 ppm<br>             Air Quality: Good<br>             </div>`)[0];
+                popup_c85c51bf5bb9b8d02f18521f098f7f5b.setContent(html_d1e67493d1b18f29810f19c6e084ec70);
+            
+        
+
+        marker_8a980b0f42afbb71573fed0421db43e3.bindPopup(popup_c85c51bf5bb9b8d02f18521f098f7f5b)
+        ;
+
+        
+    
+</script>
+</html>
